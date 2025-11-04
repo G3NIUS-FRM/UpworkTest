@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'GFSDidot';
+  src: url('./assets/fonts/GFSDidot-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-VariableFont_wdth,wght.ttf')
+    format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+:root {
+  --color-olive-light: #8e9c78;
+  --color-olive-dark: #485c11;
+  --color-black: #000000;
+  --color-cream: #dfecc6;
+  --color-gray: #929292;
+  --color-green-gray: #8f9a6d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* cambia esto */
+}
