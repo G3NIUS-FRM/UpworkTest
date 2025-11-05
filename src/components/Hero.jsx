@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import iMac from '../assets/photos/IMac.png';
 import montanaHero from '../assets/photos/montanasHero.jpg';
 import iPadPro from '../assets/photos/iPadPro.png';
-import iPhone from '../assets/photos/iPhone.png';
+import iPhoneimg from '../assets/photos/iPhone.png';
 export const Hero = () => {
   return (
     <motion.section
@@ -25,7 +25,7 @@ export const Hero = () => {
           <img src={iPadPro} alt="" className="w-full h-auto" />
         </div>
         <div className="relative bottom-[10rem] w-[80%] h-[60vh] overflow-hidden rounded-md inline md:hidden z-1 ">
-          <img src={iPhone} alt="" className="w-full h-auto" />
+          <img src={iPhoneimg} alt="" className="w-full h-auto" />
         </div>
       </div>
     </motion.section>
