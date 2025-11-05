@@ -1,7 +1,13 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 function Logo1() {
   return (
-    <div className="group inline-block">
+    <motion.div
+      className="group inline-block"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.6 }}>
       <svg
         className="filter grayscale opacity-50 transition-all duration-500 ease-in-out group-hover:grayscale-0 group-hover:opacity-100 group-hover:h-[35px] group-hover:w-[260px]"
         xmlns="http://www.w3.org/2000/svg"
@@ -51,21 +57,24 @@ function Logo1() {
           fill="#130058"
         />
       </svg>
-    </div>
+    </motion.div>
   );
 }
 
 export const Partners = () => {
   return (
-    <div className="mt-[4rem] px-10 w-full h-[30vh] flex flex-col justify-start  items-start border-b-[1px] border-b-gray-300 ">
+    <div className="mt-[4rem] px-10 w-full h-[30vh] flex flex-col justify-start items-start border-b-[1px] border-b-gray-300">
       <span className="font-roboto font-[600] text-gray-400">Trusted by:</span>
-      <div className="flex justify-between items-center w-full h-40 ">
-        {Logo1()}
-        {Logo1()}
-        {Logo1()}
-        {Logo1()}
-        {Logo1()}
-      </div>
+      <motion.div
+        className="flex justify-between items-center w-full h-40"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ staggerChildren: 0.2 }}>
+        {[...Array(5)].map((_, i) => (
+          <Logo1 key={i} />
+        ))}
+      </motion.div>
     </div>
   );
 };
