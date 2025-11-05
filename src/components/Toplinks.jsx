@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Toplinks = () => {
   return (
-    <div className="absolute top-0 z-50 w-full md:flex hidden justify-center mt-8">
+    <div className="absolute top-0  w-full md:flex hidden justify-center mt-8 z-[90]">
       <div
         className="flex justify-center items-center h-[10vh] px-6 rounded-[25px]
                      bg-white/30 backdrop-blur-md border border-white/40 ">
