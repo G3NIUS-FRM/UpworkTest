@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import iMac from '../assets/photos/IMac.png';
 import montanaHero from '../assets/photos/montanasHero.jpg';
 import iPadPro from '../assets/photos/iPadPro.png';
-import iPhoneimg from '../assets/photos/iPhone.png';
+import iPhoneimg from '../assets/photos/IPhone.png';
 export const Hero = () => {
   return (
     <motion.section
