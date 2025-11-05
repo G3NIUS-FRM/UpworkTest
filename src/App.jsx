@@ -4,38 +4,11 @@ import { Partners } from './components/Partners';
 import { Benefits } from './components/Benefits';
 import mountainMain from './assets/photos/mountainMain.jpg';
 import { SeeTheBigPicture } from './components/SeeTheBigPicture';
+import { Toplinks } from './components/Toplinks';
 function App() {
   return (
     <div className="w-full min-h-screen flex flex-col items-center">
-      <div className="absolute top-0 z-50 w-full flex justify-center mt-8">
-        <div
-          className="flex justify-center items-center h-[10vh] px-6 rounded-[25px]
-                     bg-white/30 backdrop-blur-md border border-white/40 ">
-          <div className="flex gap-8">
-            <a
-              href="#"
-              className="font-roboto font-semibold text-black hover:text-gray-500 transition">
-              Benefits
-            </a>
-            <a
-              href="#"
-              className="font-roboto font-semibold text-black hover:text-gray-500 transition">
-              Specifications
-            </a>
-            <a
-              href="#"
-              className="font-roboto font-semibold text-black hover:text-gray-500 transition">
-              How-to
-            </a>
-            <a
-              href="#"
-              className="font-roboto font-semibold text-black hover:text-gray-500 transition">
-              Contact Us
-            </a>
-          </div>
-        </div>
-      </div>
-
+      <Toplinks />
       <Navbar />
       <Hero />
 
