@@ -16,7 +16,7 @@ function App() {
       <main className="  w-full flex flex-col justify-center items-center">
         <Partners />
         <Benefits />
-        <div className="w-[90%] h-[70vh] mt-8  ">
+        <div className="w-[90%] h-[80vh] mt-8  ">
           <img
             src={mountainMain}
             alt=""

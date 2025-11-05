@@ -17,7 +17,7 @@ export const Navbar = () => {
       initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
-      className="w-[90%] flex justify-between mt-2 p-10 md:relative shadow-lg md:shadow-none  absolute top-0 z-[80] bg-white">
+      className="w-[90%] flex justify-between mt-2 p-10 md:relative shadow-lg md:shadow-none  absolute top-0 z-[71] bg-white">
       <div className="flex justify-between items-center w-full text-black ">
         <h3 className="font-roboto text-[32px] font-semibold">Area</h3>
 

@@ -33,7 +33,7 @@ export const SeeTheBigPicture = () => {
             <span className="font-roboto text-gray-400 font-semibold">03</span>
             <span className="font-roboto font-semibold">
               Make Presentations Pop: Interactive maps and dashboards keep your
-              audience engaged.
+              audience engaged..
             </span>
           </div>
           <div className="flex gap-4">
