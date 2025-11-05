@@ -107,7 +107,7 @@ export const Benefits = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ amount: 0.5 }}
-        className="h-[40vh] w-full flex flex-col justify-center items-start gap-6 px-10">
+        className="h-[40vh] w-full  flex flex-col justify-center items-start gap-6 px-10">
         <motion.span className="font-roboto font-[600] text-gray-400">
           Benefits
         </motion.span>
@@ -122,12 +122,18 @@ export const Benefits = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ amount: 0.5 }}
-        className="h-[40vh] w-full flex  justify-center items-start gap-6 mt-[3rem] px-10">
+        className="w-full flex flex-col md:flex-row justify-center items-start gap-6 mt-10 px-10
+             md:h-[40vh] h-auto">
+        {' '}
+        {/* altura automática en móvil */}
         {benefitsData.map((benefit, index) => (
           <motion.div
             key={index}
             variants={item}
-            className="flex flex-col justify-center items-start border-t-2 gap-4 border-t-gray-300 pt-[4rem]">
+            className="flex flex-col justify-center items-start border-t-2 border-t-gray-300
+                 gap-4 pt-6 md:pt-[4rem]">
+            {' '}
+            {/* padding-top reducido en móvil */}
             {benefit.svg}
             <h3 className="font-gfs text-[24px]">{benefit.title}</h3>
             <p className="font-robot text-[16px] text-gray-500">

@@ -63,10 +63,10 @@ function Logo1() {
 
 export const Partners = () => {
   return (
-    <div className="mt-[4rem] px-10 w-full h-[30vh] flex flex-col justify-start items-start border-b-[1px] border-b-gray-300">
+    <div className="mt-[4rem] px-10 w-full h-[30vh] flex flex-col justify-start items-start border-b-[1px] gap-5 md:gap-0 border-b-gray-300">
       <span className="font-roboto font-[600] text-gray-400">Trusted by:</span>
       <motion.div
-        className="flex justify-between items-center w-full h-40"
+        className="flex  flex-wrap md:flex-initial justify-between items-center w-full h-40"
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}
